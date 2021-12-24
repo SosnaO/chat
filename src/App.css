@@ -1,0 +1,141 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.messages-divider {
+  height: 78vh;
+  overflow: scroll;
+  margin: 1rem auto;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.header-container span {
+  color: black;
+  text-transform: uppercase;
+}
+
+.header-container h3 {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.message {
+  background-color: gray;
+  font-size: 1rem;
+  margin: 0.92rem;
+  padding: 0.41rem 2rem;
+}
+
+.own-message {
+  margin: 0.92rem 0 0 50%;
+}
+.message-delete {
+  margin: 0.2rem 0 0 0.5rem;
+}
+
+.message p {
+  margin: 0.2rem 0;
+  word-wrap: break-word;
+}
+
+.message img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.message svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  color: white;
+}
+
+.message-user-name {
+  font-weight: 700;
+  color: yellow;
+}
+.message-like {
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.like-active {
+  font-weight: 900;
+  background-color: red;
+}
+.message-input-text {
+  width: 40rem;
+  height: 2rem;
+  outline: none;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  padding-left: 1rem;
+}
+
+.message-input-button {
+  height: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 5rem;
+}
+.editing button {
+  margin: 0 0.2rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 5rem;
+}
+.editing input {
+  margin-right: 0.2rem;
+  width: 40rem;
+  height: 2rem;
+  outline: none;
+  padding-left: 1rem;
+}
+.loading-icon {
+  display: flex;
+  /* border: 10px solid #f3f3f3; Light grey */
+  border-top: 10px solid #9e3636; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  animation-name: spin;
+  animation-duration: 2s;
+  transition-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation: spin 2s linear infinite;
+}
+/* 
+.loading-icon div {
+  margin: auto;
+} */
+/* 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
